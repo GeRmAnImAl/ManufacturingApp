@@ -15,15 +15,15 @@ public class CustomerListUI extends JFrame {
     private JScrollPane tableScroller;
     private ButtonListener listener = new ButtonListener();
 
-    public CustomerListUI(CustomerCntl customerCntl){
+    public CustomerListUI(CustomerCntl customerCntl) {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         this.customerCntl = customerCntl;
         initComponents();
     }
 
-    public void initComponents(){
+    public void initComponents() {
         tablePanel = new JPanel();
-        buttonPanel = new JPanel(new GridLayout(1,4));
+        buttonPanel = new JPanel(new GridLayout(1, 4));
 
         customerTable = new JTable(customerCntl.getCustomerTableModel());
         customerTable.getColumnModel().getColumn(0).setPreferredWidth(25);
@@ -43,7 +43,7 @@ public class CustomerListUI extends JFrame {
         tableScroller = new JScrollPane(customerTable);
         customerTable.setFillsViewportHeight(true);
         tableScroller.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
-        tableScroller.setPreferredSize(new Dimension(350,300));
+        tableScroller.setPreferredSize(new Dimension(350, 300));
         tablePanel.add(tableScroller);
 
         this.setSize(500, 400);
@@ -53,19 +53,17 @@ public class CustomerListUI extends JFrame {
         this.getContentPane().add(tablePanel, BorderLayout.CENTER);
     }
 
-    public class ButtonListener implements ActionListener{
+    public class ButtonListener implements ActionListener {
 
         @Override
         public void actionPerformed(ActionEvent event) {
             Object source = event.getSource();
-            if(source == quitButton){
+            if (source == quitButton) {
                 System.exit(0);
-            }
-            else if(source == newButton){
+            } else if (source == newButton) {
                 CustomerListUI.this.customerCntl.getBlankCustomerUI();
 
-            }
-            else if(source == detailsButton) {
+            } else if (source == detailsButton) {
                 int selectedTableRow = customerTable.getSelectedRow();
                 int selectedModelRow = customerTable.convertRowIndexToModel(selectedTableRow);
                 if (selectedModelRow < 0) {

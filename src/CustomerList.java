@@ -4,7 +4,7 @@ public class CustomerList {
     private Customer customer;
     private ArrayList<Customer> listOfCustomers = new ArrayList<>();
 
-    public CustomerList(){
+    public CustomerList() {
         createCustomerList();
     }
 
@@ -12,11 +12,11 @@ public class CustomerList {
         return listOfCustomers;
     }
 
-    public void setListOfCustomers(ArrayList<Customer> listOfCustomers){
+    public void setListOfCustomers(ArrayList<Customer> listOfCustomers) {
         this.listOfCustomers = listOfCustomers;
     }
 
-    public void createCustomerList(){
+    public void createCustomerList() {
         customer = new Customer(123, "Ron", "Burgundy", "RBurgundy@Customer.com",
                 "133 News Way, San Diego CA, 00001", "555-555-5555", "RBurgundy", "$anDi3go");
         this.listOfCustomers.add(customer);
@@ -28,8 +28,8 @@ public class CustomerList {
         this.listOfCustomers.add(customer);
     }
 
-    public void printCustomerList(){
-        for(Customer customer : listOfCustomers){
+    public void printCustomerList() {
+        for (Customer customer : listOfCustomers) {
             System.out.println(customer);
         }
     }

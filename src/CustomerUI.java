@@ -35,6 +35,29 @@ public class CustomerUI extends JFrame {
     private JPanel mainPanel;
     private JButton doneButton;
 
+    // int selectedRow
+    public CustomerUI(CustomerCntl customerCntl, int selectedRow) {
+        setContentPane(mainPanel);
+        setSize(350, 500);
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        this.customerCntl = customerCntl;
+        this.currentSelectedRow = selectedRow;
+        this.currentCustomer = customerCntl.getCustomer(selectedRow);
+        listOfCustomers = customerCntl.getListOfCustomers();
+        customer = listOfCustomers.get(currentCustomer);
+        parseCustomer(customer);
+    }
+
+    public CustomerUI(CustomerCntl customerCntl) {
+        setContentPane(mainPanel);
+        setSize(350, 500);
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        this.customerCntl = customerCntl;
+        listOfCustomers = customerCntl.getListOfCustomers();
+        customer = listOfCustomers.get(currentCustomer);
+        createEmptyPage();
+    }
+
     // Getters
     public JButton getPreviousButton() {
         return previousButton;
@@ -68,6 +91,11 @@ public class CustomerUI extends JFrame {
         return currentCustomer;
     }
 
+    // Setters
+    public void setCurrentCustomer(int currentCustomer) {
+        this.currentCustomer = currentCustomer;
+    }
+
     public JTextField getCustIDTextField() {
         return custIDTextField;
     }
@@ -96,38 +124,7 @@ public class CustomerUI extends JFrame {
         return custProjectsTextField;
     }
 
-    // Setters
-    public void setCurrentCustomer(int currentCustomer) {
-        this.currentCustomer = currentCustomer;
-    }
-
-
-
-    // int selectedRow
-    public CustomerUI(CustomerCntl customerCntl, int selectedRow){
-        setContentPane(mainPanel);
-        setSize(350, 500);
-        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        this.customerCntl = customerCntl;
-        this.currentSelectedRow = selectedRow;
-        this.currentCustomer = customerCntl.getCustomer(selectedRow);
-        listOfCustomers = customerCntl.getListOfCustomers();
-        customer = listOfCustomers.get(currentCustomer);
-        parseCustomer(customer);
-    }
-
-    public CustomerUI(CustomerCntl customerCntl){
-        setContentPane(mainPanel);
-        setSize(350, 500);
-        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        this.customerCntl = customerCntl;
-        listOfCustomers = customerCntl.getListOfCustomers();
-        customer = listOfCustomers.get(currentCustomer);
-        createEmptyPage();
-    }
-
-
-    public void parseCustomer(Customer customer){
+    public void parseCustomer(Customer customer) {
         custIDTextField.setText(String.valueOf(customer.getCustomerID()));
         custUserNameTextField.setText(customer.getUserName());
         custEmailTextField.setText(customer.getEmail());
@@ -135,14 +132,14 @@ public class CustomerUI extends JFrame {
         custAddressTextField.setText(customer.getAddress());
         custNameTextField.setText(customer.getFirstName() + " " + customer.getLastName());
         ArrayList<Integer> projectList = new ArrayList<>();
-        for(Integer projectID : customer.getProjects().keySet()){
+        for (Integer projectID : customer.getProjects().keySet()) {
             projectList.add(projectID);
         }
         Collections.sort(projectList);
         custProjectsTextField.setText(String.valueOf(projectList.toString()));
     }
 
-    public void createEmptyPage(){
+    public void createEmptyPage() {
         custIDTextField.setText("");
         custUserNameTextField.setText("");
         custEmailTextField.setText("");
@@ -151,8 +148,6 @@ public class CustomerUI extends JFrame {
         custNameTextField.setText("");
         custProjectsTextField.setText("Can not add projects at this time.");
     }
-
-
 
 
 }

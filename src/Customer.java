@@ -47,7 +47,8 @@ public class Customer extends User {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
-    public String[] getReasonList(){
+
+    public String[] getReasonList() {
         return reasonList;
     }
 
@@ -56,12 +57,12 @@ public class Customer extends User {
     }
 
     @Override
-    public void createFlag(String reason){
+    public void createFlag(String reason) {
         for (int i = 0; i < this.reasonList.length; i++) {
             if (this.reasonList[i].equalsIgnoreCase(reason)) {
                 super.createFlag(reason);
                 System.out.printf("Customer %s %s has been successfully flagged for %s.\n", this.getFirstName(), this.getLastName(),
-                reason.toLowerCase());
+                        reason.toLowerCase());
                 break;
             }
         }

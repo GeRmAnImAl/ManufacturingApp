@@ -2,13 +2,13 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
-public class CustomerCntl implements ActionListener{
+public class CustomerCntl implements ActionListener {
     private CustomerList customerList;
     private CustomerUI customerUI;
     private CustomerTableModel customerTableModel;
     private CustomerListUI customerListUI;
 
-    public CustomerCntl(){
+    public CustomerCntl() {
         customerList = new CustomerList();
         customerTableModel = new CustomerTableModel(getListOfCustomers());
         customerListUI = new CustomerListUI(this);
@@ -16,11 +16,11 @@ public class CustomerCntl implements ActionListener{
         customerListUI.setVisible(true);
     }
 
-    public ArrayList<Customer> getListOfCustomers(){
+    public ArrayList<Customer> getListOfCustomers() {
         return customerList.getListOfCustomers();
     }
 
-    public void addALButtons(){
+    public void addALButtons() {
         customerUI.getNextButton().addActionListener(this);
         customerUI.getPreviousButton().addActionListener(this);
         customerUI.getAddButton().addActionListener(this);
@@ -29,18 +29,18 @@ public class CustomerCntl implements ActionListener{
         customerUI.getDoneButton().addActionListener(this);
     }
 
-    public CustomerTableModel getCustomerTableModel(){
+    public CustomerTableModel getCustomerTableModel() {
         return customerTableModel;
     }
 
-    public void getCustomerUI(int selectedRow){
+    public void getCustomerUI(int selectedRow) {
         customerUI = new CustomerUI(this, selectedRow);
         customerListUI.setVisible(false);
         addALButtons();
         customerUI.setVisible(true);
     }
 
-    public void getBlankCustomerUI(){
+    public void getBlankCustomerUI() {
         customerUI = new CustomerUI(this);
         customerListUI.setVisible(false);
         addALButtons();
@@ -56,22 +56,17 @@ public class CustomerCntl implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent event) {
         Object source = event.getSource();
-        if(source == customerUI.getNextButton()){
+        if (source == customerUI.getNextButton()) {
             goNextCustomer();
-        }
-        else if (source == customerUI.getPreviousButton()) {
+        } else if (source == customerUI.getPreviousButton()) {
             goPreviousCustomer();
-        }
-        else if (source == customerUI.getAddButton()) {
+        } else if (source == customerUI.getAddButton()) {
             goAddCustomer();
-        }
-        else if(source == customerUI.getUpdateButton()){
+        } else if (source == customerUI.getUpdateButton()) {
             goUpdateCustomer();
-        }
-        else if(source == customerUI.getDeleteButton()){
+        } else if (source == customerUI.getDeleteButton()) {
             goDeleteCustomer();
-        }
-        else if(source == customerUI.getDoneButton()){
+        } else if (source == customerUI.getDoneButton()) {
             customerUI.setVisible(false);
             customerListUI.setVisible(true);
         }
@@ -79,7 +74,7 @@ public class CustomerCntl implements ActionListener{
 
     private void goDeleteCustomer() {
         int customerToDelete = customerUI.getCurrentCustomer();
-        if(customerUI.getCurrentCustomer() == customerUI.getListOfCustomers().size() - 1){
+        if (customerUI.getCurrentCustomer() == customerUI.getListOfCustomers().size() - 1) {
             customerUI.setCurrentCustomer(customerUI.getListOfCustomers().size() - 2);
         }
         customerUI.getListOfCustomers().remove(customerToDelete);
@@ -123,22 +118,20 @@ public class CustomerCntl implements ActionListener{
     }
 
     private void goPreviousCustomer() {
-        if(customerUI.getCurrentCustomer() == 0){
+        if (customerUI.getCurrentCustomer() == 0) {
             customerUI.setCurrentCustomer(customerUI.getListOfCustomers().size() - 1);
             customerUI.parseCustomer(customerUI.getListOfCustomers().get(customerUI.getCurrentCustomer()));
-        }
-        else{
+        } else {
             customerUI.setCurrentCustomer(customerUI.getCurrentCustomer() - 1);
             customerUI.parseCustomer(customerUI.getListOfCustomers().get(customerUI.getCurrentCustomer()));
         }
     }
 
     private void goNextCustomer() {
-        if(customerUI.getCurrentCustomer() == customerUI.getListOfCustomers().size() - 1){
+        if (customerUI.getCurrentCustomer() == customerUI.getListOfCustomers().size() - 1) {
             customerUI.setCurrentCustomer(0);
             customerUI.parseCustomer(customerUI.getListOfCustomers().get(customerUI.getCurrentCustomer()));
-        }
-        else{
+        } else {
             customerUI.setCurrentCustomer(customerUI.getCurrentCustomer() + 1);
             customerUI.parseCustomer(customerUI.getListOfCustomers().get(customerUI.getCurrentCustomer()));
         }

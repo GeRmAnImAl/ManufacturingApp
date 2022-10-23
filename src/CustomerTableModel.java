@@ -5,7 +5,7 @@ public class CustomerTableModel extends AbstractTableModel {
     private String[] columnNames = {"ID", "Last Name", "Phone"};
     private ArrayList<Customer> customerList;
 
-    public CustomerTableModel(ArrayList<Customer> customerList){
+    public CustomerTableModel(ArrayList<Customer> customerList) {
         this.customerList = customerList;
     }
 
@@ -22,7 +22,7 @@ public class CustomerTableModel extends AbstractTableModel {
 
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
-        switch(columnIndex){
+        switch (columnIndex) {
             case 0:
                 return (Object) customerList.get(rowIndex).getCustomerID();
             case 1:
@@ -35,7 +35,7 @@ public class CustomerTableModel extends AbstractTableModel {
     }
 
     @Override
-    public String getColumnName(int columnIndex){
+    public String getColumnName(int columnIndex) {
         return columnNames[columnIndex];
     }
 }
