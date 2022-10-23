@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b03df5cd-9328-4086-b49f-621088b4c2e1" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2EPE3etlOZ667VblPs3EVOrzEzd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "245",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_directory_selection": "C:/Users/Germani/Documents/Penn State/Fall 2022/IST261/Modules/Semester App/ManufacturingApp/Test",
+    "last_opened_file_path": "C:/Users/Germani/Documents/Penn State/Fall 2022/IST261/Modules/Semester App/ManufacturingApp.zip",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Application">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Application" />
+      <module name="ManufacturingApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ManufacturingApp" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CustomerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerTest.testGetPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ManufacturingApp" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CustomerTest" />
+      <option name="METHOD_NAME" value="testGetPassword" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ManufacturingApp" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EmployeeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InstallationTest.testAddJobNotes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ManufacturingApp" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="InstallationTest" />
+      <option name="METHOD_NAME" value="testAddJobNotes" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Application" />
+        <item itemvalue="JUnit.InstallationTest.testAddJobNotes" />
+        <item itemvalue="JUnit.EmployeeTest" />
+        <item itemvalue="JUnit.CustomerTest" />
+        <item itemvalue="JUnit.CustomerTest.testGetPassword" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b03df5cd-9328-4086-b49f-621088b4c2e1" name="Changes" comment="" />
+      <created>1662488625815</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1662488625815</updated>
+      <workItem from="1662488627196" duration="7354000" />
+      <workItem from="1662766524669" duration="73000" />
+      <workItem from="1662822181581" duration="105000" />
+      <workItem from="1662840923373" duration="69000" />
+      <workItem from="1662841002330" duration="54000" />
+      <workItem from="1663081903466" duration="9666000" />
+      <workItem from="1663092268189" duration="2112000" />
+      <workItem from="1663094430466" duration="612000" />
+      <workItem from="1664409596046" duration="4195000" />
+      <workItem from="1664832454350" duration="13476000" />
+      <workItem from="1665437641730" duration="4000" />
+      <workItem from="1665775102760" duration="10643000" />
+      <workItem from="1665938272361" duration="1827000" />
+      <workItem from="1665946436346" duration="10661000" />
+      <workItem from="1666456199691" duration="4666000" />
+      <workItem from="1666471792320" duration="7471000" />
+      <workItem from="1666539231074" duration="3264000" />
+    </task>
+    <task id="LOCAL-00001" summary="Create first version of five model classes&#10;&#10;Created and implemented the first versions of the five primary model classes. This includes&#10;fields, constructors, and getters/setters.">
+      <created>1662490354240</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662490354240</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Create toString overrides for all classes&#10;&#10;Created preliminary toString override methods for all classes. Methods are subject to change&#10;depending on testing going further.">
+      <created>1662493201952</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662493201952</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Update toString override methods&#10;&#10;Rewrite toString override methods to simplify code and use better formatting.">
+      <created>1662495246525</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1662495246525</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Create JUnit tests in CustomerTest.java for Customer class&#10;&#10;Tests created to verify the functionality of the constructor and all getters/setters for the&#10;Customer class.">
+      <created>1663084161073</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1663084161074</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Create JUnit tests for various test classes&#10;&#10;Tests created to verify the functionality of the constructor and all getters/setters for the&#10;Employee, Installation, Library, and Project classes.">
+      <created>1663089381199</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1663089381199</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Create TestHarness and manual tests for Installation and Library classes&#10;&#10;Used a TestHarness class to test functionality of the Installation and Library classes as&#10;requested. However, this does not seem to be the most efficient way to test classes.">
+      <created>1663094035679</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1663094035679</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Create User class and make it a parent of Customer and Employee classes&#10;&#10;Use the User class as a superclass to Customer and Employee classes to better structure the&#10;application as a whole. Add test functionality for this new setup to the TestHarness class.">
+      <created>1664832561066</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1664832561066</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Create JobNotes interface to use with Projects and Installation classes&#10;&#10;Alter Project class to implement JobNotes interface. Implement required methods and add&#10;functionality to them. Add HashMap field to Project class to hold JobNotes information.">
+      <created>1664834063860</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1664834063860</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Alter Installation class by adding functionality for JobNotes interface methods&#10;&#10;Implemented functionality for all JobNotes interface methods in the Installation class.">
+      <created>1664918357838</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1664918357838</updated>
+    </task>
+    <task id="LOCAL-00010" summary="House-keeping commit&#10;&#10;Clean up code and make the TestHarness class work.">
+      <created>1664918843822</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1664918843822</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Implement GUI and GUI functionality&#10;&#10;Create controller class and UI class for Project class. Design and implement GUI for Project&#10;class.">
+      <created>1665781235577</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1665781235577</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Create first version of five model classes&#10;&#10;Created and implemented the first versions of the five primary model classes. This includes&#10;fields, constructors, and getters/setters." />
+    <MESSAGE value="Create toString overrides for all classes&#10;&#10;Created preliminary toString override methods for all classes. Methods are subject to change&#10;depending on testing going further." />
+    <MESSAGE value="Update toString override methods&#10;&#10;Rewrite toString override methods to simplify code and use better formatting." />
+    <MESSAGE value="Create JUnit tests in CustomerTest.java for Customer class&#10;&#10;Tests created to verify the functionality of the constructor and all getters/setters for the&#10;Customer class." />
+    <MESSAGE value="Create JUnit tests for various test classes&#10;&#10;Tests created to verify the functionality of the constructor and all getters/setters for the&#10;Employee, Installation, Library, and Project classes." />
+    <MESSAGE value="Create TestHarness and manual tests for Installation and Library classes&#10;&#10;Used a TestHarness class to test functionality of the Installation and Library classes as&#10;requested. However, this does not seem to be the most efficient way to test classes." />
+    <MESSAGE value="Create User class and make it a parent of Customer and Employee classes&#10;&#10;Use the User class as a superclass to Customer and Employee classes to better structure the&#10;application as a whole. Add test functionality for this new setup to the TestHarness class." />
+    <MESSAGE value="Create JobNotes interface to use with Projects and Installation classes&#10;&#10;Alter Project class to implement JobNotes interface. Implement required methods and add&#10;functionality to them. Add HashMap field to Project class to hold JobNotes information." />
+    <MESSAGE value="Alter Installation class by adding functionality for JobNotes interface methods&#10;&#10;Implemented functionality for all JobNotes interface methods in the Installation class." />
+    <MESSAGE value="House-keeping commit&#10;&#10;Clean up code and make the TestHarness class work." />
+    <MESSAGE value="Implement GUI and GUI functionality&#10;&#10;Create controller class and UI class for Project class. Design and implement GUI for Project&#10;class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement GUI and GUI functionality&#10;&#10;Create controller class and UI class for Project class. Design and implement GUI for Project&#10;class." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Application.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
