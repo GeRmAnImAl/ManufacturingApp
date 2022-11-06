@@ -2,7 +2,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
-public class LoginCntl<T> implements ActionListener {
+public class LoginCntl implements ActionListener {
     private LoginUI loginUI;
 
     private EmployeeList currentEmployeeList;

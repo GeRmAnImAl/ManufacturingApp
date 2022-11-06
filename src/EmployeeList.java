@@ -43,7 +43,7 @@ public class EmployeeList implements Serializable{
             in = new ObjectInputStream(fis);
             listOfEmployees = (ArrayList) in.readObject();
             in.close();
-            if(!listOfEmployees.isEmpty()){
+            if(listOfEmployees.isEmpty()){
                 System.out.println("There are no employees in the list.");
             }
         }

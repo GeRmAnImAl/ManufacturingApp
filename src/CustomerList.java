@@ -1,12 +1,19 @@
-import java.io.Serializable;
+import java.io.*;
 import java.util.ArrayList;
 
 public class CustomerList implements Serializable {
     private Customer customer;
     private ArrayList<Customer> listOfCustomers = new ArrayList<>();
+    private String listOfCustomersFileName = "listOfCustomers.ser";
 
     public CustomerList() {
-        createCustomerList();
+        this.readCustomerListFile();
+
+        if(listOfCustomers.isEmpty() || listOfCustomers == null){
+            this.createCustomerList();
+            this.writeCustomerListFile();
+            this.readCustomerListFile();
+        }
     }
 
     public ArrayList<Customer> getListOfCustomers() {
@@ -32,6 +39,43 @@ public class CustomerList implements Serializable {
     public void printCustomerList() {
         for (Customer customer : listOfCustomers) {
             System.out.println(customer);
+        }
+    }
+
+    private void writeCustomerListFile() {
+        FileOutputStream fos = null;
+        ObjectOutputStream out = null;
+        try{
+            fos = new FileOutputStream(listOfCustomersFileName);
+            out = new ObjectOutputStream(fos);
+            out.writeObject(listOfCustomers);
+            out.close();
+        }
+        catch (IOException exception){
+            exception.printStackTrace();
+        }
+    }
+
+    private void readCustomerListFile() {
+        FileInputStream fis = null;
+        ObjectInputStream in = null;
+        try{
+            fis = new FileInputStream(listOfCustomersFileName);
+            in = new ObjectInputStream(fis);
+            listOfCustomers = (ArrayList) in.readObject();
+            in.close();
+            if(listOfCustomers.isEmpty()){
+                System.out.println("There are no customers in the list.");
+            }
+        }
+        catch (FileNotFoundException fne){
+            System.out.println("File was not found, a new one will be created.");
+        }
+        catch (IOException ex){
+            ex.printStackTrace();
+        }
+        catch (ClassNotFoundException exception){
+            exception.printStackTrace();
         }
     }
 }
