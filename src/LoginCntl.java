@@ -58,9 +58,11 @@ public class LoginCntl<T> implements ActionListener {
     }
 
     private void goLogin() {
+        boolean userFound = false;
         if(this.listToCheck.equals("Customer")){
             for(Customer customer : listOfCustomers){
                 if (loginUI.getUserNameTextField().getText().equals(customer.getUserName())){
+                    userFound = true;
                     if(loginUI.getPasswordField1().getText().equals(customer.getPassword())){
                         loginUI.getMessageField().setText("Login Successful.");
                     }
@@ -75,6 +77,7 @@ public class LoginCntl<T> implements ActionListener {
         } else if (this.listToCheck.equals("Employee")) {
             for(Employee employee : listOfEmployees){
                 if (loginUI.getUserNameTextField().getText().equals(employee.getUserName())){
+                    userFound = true;
                     if(loginUI.getPasswordField1().getText().equals(employee.getPassword())){
                         loginUI.getMessageField().setText("Login Successful.");
                     }
@@ -86,6 +89,10 @@ public class LoginCntl<T> implements ActionListener {
                     continue;
                 }
             }
+        }
+
+        if(!userFound){
+            loginUI.getMessageField().setText("User name does not exist.");
         }
     }
 }
