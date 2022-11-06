@@ -3,7 +3,8 @@ public class Application {
         //TestHarness testHarness = new TestHarness();
 
         //ProjectCntl projectCntl = new ProjectCntl();
-        CustomerCntl customerCntl = new CustomerCntl();
+        //CustomerCntl customerCntl = new CustomerCntl();
+        LoginCntl loginCntl = new LoginCntl();
     }
 
 }
