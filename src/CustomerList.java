@@ -1,6 +1,7 @@
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class CustomerList {
+public class CustomerList implements Serializable {
     private Customer customer;
     private ArrayList<Customer> listOfCustomers = new ArrayList<>();
 

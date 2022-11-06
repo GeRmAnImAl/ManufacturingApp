@@ -2,7 +2,7 @@ import java.io.*;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-public class EmployeeList {
+public class EmployeeList implements Serializable{
     private Employee employee;
     private ArrayList<Employee> listOfEmployees = new ArrayList<>();
 
