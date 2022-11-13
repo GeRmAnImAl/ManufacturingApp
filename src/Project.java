@@ -6,7 +6,8 @@ import java.util.Scanner;
 
 public class Project implements JobNotes {
     private int projectID;
-    private String description, status;
+    private String description;
+    private String status;
     private LocalDate estimatedStart;
     private LocalDate actualStart;
     private LocalDate estimatedFinish;
